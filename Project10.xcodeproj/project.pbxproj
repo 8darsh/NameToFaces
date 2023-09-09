@@ -14,6 +14,11 @@
 		D2A5D7842AA0BBB000214ED1 /* Project10.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2A5D7822AA0BBB000214ED1 /* Project10.xcdatamodeld */; };
 		D2A5D7862AA0BBB100214ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5D7852AA0BBB100214ED1 /* Assets.xcassets */; };
 		D2A5D7892AA0BBB100214ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5D7872AA0BBB100214ED1 /* LaunchScreen.storyboard */; };
+		D2A5D7962AA0BC6B00214ED1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A5D7952AA0BC6B00214ED1 /* CoreData.framework */; };
+		D2A5D7982AA0BC9C00214ED1 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5D7972AA0BC9C00214ED1 /* DatabaseHelper.swift */; };
+		D2A5D79B2AA0C0E200214ED1 /* People+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5D7992AA0C0E200214ED1 /* People+CoreDataClass.swift */; };
+		D2A5D79C2AA0C0E200214ED1 /* People+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5D79A2AA0C0E200214ED1 /* People+CoreDataProperties.swift */; };
+		D2A5D79E2AA0C7CC00214ED1 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5D79D2AA0C7CC00214ED1 /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		D2A5D7852AA0BBB100214ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2A5D7882AA0BBB100214ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A5D78A2AA0BBB100214ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A5D7952AA0BC6B00214ED1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D2A5D7972AA0BC9C00214ED1 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		D2A5D7992AA0C0E200214ED1 /* People+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "People+CoreDataClass.swift"; path = "../People+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D2A5D79A2AA0C0E200214ED1 /* People+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "People+CoreDataProperties.swift"; path = "../People+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D2A5D79D2AA0C7CC00214ED1 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A5D7962AA0BC6B00214ED1 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			children = (
 				D2A5D7782AA0BBB000214ED1 /* Project10 */,
 				D2A5D7772AA0BBB000214ED1 /* Products */,
+				D2A5D7942AA0BC6B00214ED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,13 +73,25 @@
 				D2A5D7792AA0BBB000214ED1 /* AppDelegate.swift */,
 				D2A5D77B2AA0BBB000214ED1 /* SceneDelegate.swift */,
 				D2A5D77D2AA0BBB000214ED1 /* ViewController.swift */,
+				D2A5D7972AA0BC9C00214ED1 /* DatabaseHelper.swift */,
+				D2A5D7992AA0C0E200214ED1 /* People+CoreDataClass.swift */,
+				D2A5D79A2AA0C0E200214ED1 /* People+CoreDataProperties.swift */,
 				D2A5D77F2AA0BBB000214ED1 /* Main.storyboard */,
+				D2A5D79D2AA0C7CC00214ED1 /* PersonCell.swift */,
 				D2A5D7852AA0BBB100214ED1 /* Assets.xcassets */,
 				D2A5D7872AA0BBB100214ED1 /* LaunchScreen.storyboard */,
 				D2A5D78A2AA0BBB100214ED1 /* Info.plist */,
 				D2A5D7822AA0BBB000214ED1 /* Project10.xcdatamodeld */,
 			);
 			path = Project10;
+			sourceTree = "<group>";
+		};
+		D2A5D7942AA0BC6B00214ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2A5D7952AA0BC6B00214ED1 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A5D79B2AA0C0E200214ED1 /* People+CoreDataClass.swift in Sources */,
+				D2A5D79C2AA0C0E200214ED1 /* People+CoreDataProperties.swift in Sources */,
+				D2A5D79E2AA0C7CC00214ED1 /* PersonCell.swift in Sources */,
 				D2A5D77E2AA0BBB000214ED1 /* ViewController.swift in Sources */,
 				D2A5D77A2AA0BBB000214ED1 /* AppDelegate.swift in Sources */,
+				D2A5D7982AA0BC9C00214ED1 /* DatabaseHelper.swift in Sources */,
 				D2A5D7842AA0BBB000214ED1 /* Project10.xcdatamodeld in Sources */,
 				D2A5D77C2AA0BBB000214ED1 /* SceneDelegate.swift in Sources */,
 			);
